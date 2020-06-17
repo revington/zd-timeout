@@ -1,0 +1,29 @@
+{
+    "name": "zd-timeout",
+    "version": "1.0.1",
+    "description": "Zero deps, Ensure a function is only called timeout",
+    "main": "index.js",
+    "directories": {
+        "lib": "lib",
+        "test": "test"
+    },
+    "scripts": {
+        "test": "nyc --reporter=html  mocha  --bail --timeout 10000 --check-leaks test",
+        "test-ci": "nyc mocha test  --timeout 10000  --check-leaks "
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/revington/zd-timeout.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/revington/zd-timeout/issues"
+    },
+    "homepage": "https://github.com/revington/zd-timeout#readme",
+    "devDependencies": {
+        "mocha": "^7.2.0",
+        "nyc": "^15.1.0"
+    }
+}
