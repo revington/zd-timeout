@@ -23,7 +23,7 @@
     },
     "homepage": "https://github.com/revington/zd-timeout#readme",
     "devDependencies": {
-        "mocha": "^7.2.0",
+        "mocha": "^10.2.0",
         "nyc": "^15.1.0"
     }
 }
